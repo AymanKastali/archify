@@ -1,0 +1,8 @@
+# Editor and OS noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local silencing of the SessionStart hook — never committed
+.archify-off

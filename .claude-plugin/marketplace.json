@@ -1,0 +1,21 @@
+{
+  "name": "archify",
+  "owner": {
+    "name": "Ayman Kastali"
+  },
+  "metadata": {
+    "version": "0.4.0",
+    "description": "Ayman Kastali's Go DDD and modular-monolith standard, as a plugin. Designed to run hand-in-hand with mattpocock-skills."
+  },
+  "plugins": [
+    {
+      "name": "archify",
+      "description": "The binding standard for Domain-Driven Design, Clean Architecture, Clean Code and the modular monolith in Go. Runs underneath Matt Pocock's skills.",
+      "version": "0.4.0",
+      "author": {
+        "name": "Ayman Kastali"
+      },
+      "source": "./"
+    }
+  ]
+}

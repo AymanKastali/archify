@@ -1,0 +1,34 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Once a week, with the external link check turned on, so a citation that
+    # rots is found by CI rather than by a reader.
+    - cron: "0 6 * * 1"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run checks
+        run: ./scripts/check.sh
+
+      - name: Check cited URLs
+        if: github.event_name == 'schedule'
+        env:
+          ARCHIFY_CHECK_URLS: "1"
+        run: ./scripts/check.sh

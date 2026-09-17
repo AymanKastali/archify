@@ -1,0 +1,28 @@
+{
+  "name": "archify",
+  "version": "0.4.0",
+  "description": "The binding standard for Domain-Driven Design, Clean Architecture, Clean Code and the modular monolith in Go \u2014 the project layout included. Runs underneath Matt Pocock's skills: feeds /to-spec, /implement and /code-review the model rules, named authorities and an explicit precedence order, so the standard is applied rather than remembered.",
+  "author": {
+    "name": "Ayman Kastali"
+  },
+  "repository": "https://github.com/AymanKastali/archify",
+  "license": "MIT",
+  "keywords": [
+    "domain-driven-design",
+    "clean-architecture",
+    "hexagonal-architecture",
+    "modular-monolith",
+    "clean-code",
+    "golang",
+    "project-layout",
+    "code-review",
+    "standards"
+  ],
+  "skills": [
+    "./skills/standard",
+    "./skills/modelling-decisions",
+    "./skills/writing-order",
+    "./skills/review-passes",
+    "./skills/setup"
+  ]
+}
